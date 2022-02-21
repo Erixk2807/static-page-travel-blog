@@ -1,38 +1,93 @@
-.App {
-  text-align: center;
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body {
+  font-family: "Inter", sans-serif;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+section {
+  padding: 6rem 2rem;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 55px;
+  color: #fff;
+  background-color: #f55a5a;
+  font-size: clamp(1.4rem, 2vw, 1.8rem);
+}
+
+.header__title {
+  font-size: 1em;
+  padding: 1em;
+}
+
+.post {
+  display: flex;
+  width: 80%;
+  max-width: 700px;
+  margin: auto;
+  padding: 1rem;
+}
+
+.location {
+  display: flex;
+  align-items: center;
+  font-size: clamp(1.2em, 2vw, 1.4em);
+}
+
+.location__icon {
+  margin-right: 0.5em;
+  color: #f55a5a;
+}
+
+.location__title {
+  text-transform: uppercase;
+  margin-right: 2rem;
+  letter-spacing: 2px;
+}
+.location__link {
+  color: #918e9b;
+}
+
+.img-container {
+  flex: 1;
+  min-height: 200px;
+  margin-right: 4em;
+  box-shadow: 2px 6px 6px rgb(0 0 0 / 16%);
+  border-radius: 5px;
+}
+.info-container {
+  flex: 3;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap: 0.8rem;
 }
 
-.App-link {
-  color: #61dafb;
+.title {
+  font-size: clamp(2em, 3vw, 2.5em);
+  font-weight: 700;
+  margin-bottom: 2rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.date {
+  font-weight: 700;
+}
+
+.paragraph {
+  font-size: clamp(1.4em, 2.5vw, 1.6em);
 }
